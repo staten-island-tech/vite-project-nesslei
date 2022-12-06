@@ -1,8 +1,8 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import { setupCounter } from './counter.js'
+import "./style.css";
+import javascriptLogo from "./javascript.svg";
+import { setupCounter } from "./counter.js";
 
-document.querySelector('#app').innerHTML = `
+document.querySelector("#app").innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
@@ -18,6 +18,30 @@ document.querySelector('#app').innerHTML = `
       Click on the Vite logo to learn more
     </p>
   </div>
-`
+`;
 
-setupCounter(document.querySelector('#counter'))
+setupCounter(document.querySelector("#counter"));
+
+const hedgehogs = [
+  {
+    id: 1,
+    name: `hedgy1`,
+  },
+
+  {
+    id: 2,
+    name: `hedgy2`,
+  },
+  {
+    id: 3,
+    name: `hedgy3`,
+  },
+  {
+    id: 4,
+    name: `hedgy4`,
+  },
+  {
+    id: 5,
+    name: `hedgy5`,
+  },
+];
