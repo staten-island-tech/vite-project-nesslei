@@ -27,7 +27,6 @@ const hedgehogs = [
     id: 1,
     name: `hedgy1`,
   },
-
   {
     id: 2,
     name: `hedgy2`,
@@ -35,13 +34,16 @@ const hedgehogs = [
   {
     id: 3,
     name: `hedgy3`,
+    url: 
   },
   {
     id: 4,
     name: `hedgy4`,
+    url: "https://goldenexoticpets.com/wp-content/uploads/2020/06/Buy-Albino-Pygmy-Hedgehog.jpg",
   },
   {
     id: 5,
     name: `hedgy5`,
+    url: "https://i.pinimg.com/originals/89/55/a7/8955a71079b6edb4e682eb5d761e4076.jpg",
   },
 ];
