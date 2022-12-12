@@ -1,8 +1,4 @@
-import "./style.css";
-import javascriptLogo from "./javascript.svg";
-import { setupCounter } from "./counter.js";
-
-const poop = { display: document.querySelector(".hedgehogs") };
+import "../styles/style.css";
 
 document.querySelector("#app").innerHTML = `
   <div>
@@ -29,6 +25,7 @@ const hedgehogs = [
     id: 1,
     name: `hedgy1`,
     url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS23kXPcP0PHe9pr9H6qW59vMT3P8G8fzRJ4g&usqp=CAU",
+    color: 
   },
   {
     id: 2,
@@ -50,5 +47,17 @@ const hedgehogs = [
     id: 5,
     name: `hedgy5`,
     url: "https://i.pinimg.com/originals/89/55/a7/8955a71079b6edb4e682eb5d761e4076.jpg",
+  },
+
+  {
+    id: 6,
+    name: `hedgy6`,
+    url: "https://nypost.com/wp-content/uploads/sites/2/2021/05/hedgehog.jpg?quality=75&strip=all&w=1024",
+  },
+
+  {
+    id: 7,
+    name: `hedgy7`,
+    url: "",
   },
 ];
