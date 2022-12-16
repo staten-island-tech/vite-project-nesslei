@@ -1,10 +1,15 @@
 import "../styles/style.css";
 
-const DOMSelectors = {
-  container: document.querySelectorAll(`#container`),
-  container: document.getElementById("container"),
-  form: document.getElementById("form"),
-};
+document.querySelector(".button").addEventListener("click", function () {
+  if (document.body.classList.contains("white")); 
+  {
+  document.body.classList.add("black"); 
+  document.body.classList.remove("white");
+  } else {
+  document.body.classList.add("white"); 
+  document.body.classList.remove("black");
+  }
+});
 
 document.querySelector("#app").innerHTML = `
   <div>
@@ -26,7 +31,7 @@ document.querySelector("#app").innerHTML = `
 
 setupCounter(document.querySelector("#counter"));
 
-const hedgehogs = [
+const legends = [
   {
     id: 1,
     name: `Bangalore`,
