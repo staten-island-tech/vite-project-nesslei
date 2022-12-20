@@ -1,32 +1,6 @@
 import "../styles/style.css";
 
-const DOMSelectors = {
-  container: document.querySelectorAll(`#container`),
-  container: document.getElementById("container"),
-  form: document.getElementById("form"),
-};
-
-document.querySelector("#app").innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`;
-
-setupCounter(document.querySelector("#counter"));
-
-const hedgehogs = [
+const legends = [
   {
     id: 1,
     name: `Bangalore`,
@@ -82,3 +56,50 @@ const hedgehogs = [
     classified: "Pioneer",
   },
 ];
+
+const DOMSelectors = {
+  display: document.getElementById("display"),
+};
+
+document.getElementById("Runner").addEventListener("click", function () {
+  DOMSelectors.display.innerHTML = "";
+  Runner("Runner"); 
+});
+
+document.getElementById("Assault").addEventListener("click", function () {
+  DOMSelectors.display.innerHTML = "";
+});
+
+document.getElementById("Support").addEventListener("click", function () {
+  DOMSelectors.display.innerHTML = "";
+});
+
+document.querySelector(".Color").addEventListener("click", function () {
+  if (document.body.classList.contains("No-Color")) {
+    document.body.classList.add("Color");
+    document.body.classList.remove("No-Color");
+  }
+});
+
+document.querySelector(".No-Color").addEventListener("click", function () {
+  if (document.body.classList.contains("Color")) {
+    document.body.classList.add("No-Color");
+    document.body.classList.remove("Color");
+  }
+});
+
+function Runner (clicked) {
+  const Runnerclass = legends.filter((clicked) => legends.clicked === true);
+  runnerclass.forEach((Runnerclass) => {
+    DOMSelectors.display.insertAdjacentHTML(
+      "afterbegin",
+      `<div class="box" id="legends-box">
+      <h2 class="legends-name">${legends.name}</h2>
+      <img class="legends-url" src="${legends.url}"</img>
+      <h3 class="classification">$${legends.classified}</h3>
+      </div>`
+    );
+  });
+};
+
+
