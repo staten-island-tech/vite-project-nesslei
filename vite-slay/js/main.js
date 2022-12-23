@@ -63,7 +63,6 @@ document.querySelector(".Assault").addEventListener("click", function () {
 });
 
 document.querySelector(".Support").addEventListener("click", function () {
-  Apples.display.innerHTML = "";
   legends
     .filter((legends) => legends.classified.includes("Support"))
     .forEach((legends) => {

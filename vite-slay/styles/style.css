@@ -27,6 +27,10 @@
   background-color: var(--secondary);
  }
 
+ .button {
+  color: var(--secondary);
+ }
+
 .card{
   display: flex;
   flex-direction: column;
