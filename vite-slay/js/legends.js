@@ -35,13 +35,6 @@ export const legends = [
     cute: false,
   },
   {
-    id: 6,
-    name: "Horizon",
-    url: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-horizon-xl.jpg.adapt.320w.jpg",
-    classified: [`Runner`],
-    cute: false,
-  },
-  {
     id: 7,
     name: "Bloodhound",
     url: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-bloodhound-xl.jpg.adapt.320w.jpg",

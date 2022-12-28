@@ -1,46 +1,42 @@
 
  :root {
-  --black: #000;
   --gray: #252c30;
-  --red: #dc2626;
-  --blue: #ffffff;
-  
-  --primary: var(--black);
-  --secondary: var(--gray);
+  --white: #ffffff;
+  --black: #0000; 
+
+  --primary: var(--white);
+  --secondary: var(--black);
+
+   --h1: 7.594rem;
+  --h2: 5.063rem;
+  --h3: 3.375rem;
+  --h4: 2.25rem;
+  --h5: 1.5rem;
  }
   
  .Color {
-  --primary: var(--black);
-  --secondary: var(--gray);
+  --primary: var(--white);
+  --secondary: var(--black);
  }
   
  .No-Color {
-  --primary: var(--red);
-  --secondary: var(--blue);
- }
-  
- #app {
-  background-color: var(--primary);
- }
-  
- .stepmommy {
-  background-color: var(--secondary);
+  --primary: var(--black);
+  --secondary: var(--white);
  }
 
- .button {
-  color: var(--secondary);
- }
-
-.card{
+.card {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 28%;
   height: 60rem;
   margin: 1rem auto;
-  background-color: #131313;
-  color: white;
+  background-color: var(--secondary); 
   align-items: center;
+}
+
+.h2 {
+  color: var(--primary);
 }
 
 .display {
@@ -71,7 +67,7 @@
 }
 
 .button.active {
-  background-color: #666;
+  background-color: rgb(0, 0, 0);
   color: white;
 }
   

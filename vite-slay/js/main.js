@@ -5,7 +5,7 @@ const Apples = {
   display: document.querySelector(".display"),
 };
 
-document.querySelector(`.Color`).addEventListener("click", function () {
+document.querySelector(`#Color`).addEventListener("click", function () {
   if (document.body.classList.contains("No-Color")) {
     document.body.classList.add("Color");
     document.body.classList.remove("No-Color");
@@ -63,6 +63,7 @@ document.querySelector(".Assault").addEventListener("click", function () {
 });
 
 document.querySelector(".Support").addEventListener("click", function () {
+  Apples.display.innerHTML = ""; 
   legends
     .filter((legends) => legends.classified.includes("Support"))
     .forEach((legends) => {
@@ -77,21 +78,4 @@ document.querySelector(".Support").addEventListener("click", function () {
     });
 });
 
-document.querySelector(".cute").addEventListener("click", function () {
-  Apples.display.innerHTML = "";
-  legends
-    .filter((legends) => legends.ten === true)
-    .forEach((legends) => {
-      let html = `
-      <div class="card">
-      <img class="legends-picture" src="${legends.url}">
-      <h2 class="cute">This ${legends.name} a ${legends.classified}.</h2>
-      </div>
-    `;
-      legends.classified.forEach((classified) => {
-        let newEl = `<p class="class">${classified}</p>`;
-        return (html += newEl);
-      });
-      Apples.display.insertAdjacentHTML("beforeend", html);
-    });
-});
+
