@@ -49,7 +49,7 @@
 }
 
 .mommy {
-  background-image:url(OOMAGES/background.webp);
+  background-image:url(../public/OOMAGES/background.webp);
   background-size:cover;
   overflow: hidden;
  }
