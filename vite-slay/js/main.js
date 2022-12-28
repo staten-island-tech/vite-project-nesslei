@@ -3,9 +3,10 @@ import { legends } from "../js/legends.js";
 
 const Apples = {
   display: document.querySelector(".display"),
+  colorBttn: document.getElementById(`Color`),
 };
 
-document.querySelector(`#Color`).addEventListener("click", function () {
+document.getElementById(`Color`).addEventListener("click", function () {
   if (document.body.classList.contains("No-Color")) {
     document.body.classList.add("Color");
     document.body.classList.remove("No-Color");
