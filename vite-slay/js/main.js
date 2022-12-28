@@ -24,10 +24,6 @@ legends.forEach((legends) => {
   <h2 class="class">This is ${legends.classified}</h2>
   </div>
 `;
-  legends.classified.forEach((classified) => {
-    let newEl = `<p class="classified">${classified}</p>`;
-    return (html += newEl);
-  });
   Apples.display.insertAdjacentHTML("beforeend", html);
 });
 
@@ -78,5 +74,3 @@ document.querySelector(".Support").addEventListener("click", function () {
       Apples.display.insertAdjacentHTML("beforeend", html);
     });
 });
-
-
